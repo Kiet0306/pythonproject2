@@ -44,7 +44,7 @@ with st.container():
         st.subheader("")
 
 #import file excel(đang bị lỗi)+thanh filter
-dataset=pd.read_excel(r'E:\Python\vgsales.xlsx')
+dataset=pd.read_excel(r'vgsales.xlsx')
 st.sidebar.header("Please Filter Here:")
 Genre = st.sidebar.multiselect(
    "Select the Genre:",
