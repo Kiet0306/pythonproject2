@@ -12,7 +12,7 @@ st.set_page_config(page_title="Video game sales", page_icon=":tada:", layout="wi
 
 #Intro
 with st.container():
-    st.subheader("Welcom  e :wave:")
+    st.subheader("Welcome :wave:")
     st.title("BUSINESS IT 🌐")
     st.write("Our interactive web application project")
     
