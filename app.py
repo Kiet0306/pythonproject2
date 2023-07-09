@@ -12,7 +12,7 @@ st.set_page_config(page_title="Video game sales", page_icon=":tada:", layout="wi
 
 #Intro
 with st.container():
-    st.subheader("Welcom  e :wave:")
+    st.subheader("Welcome :wave:")
     st.title("BUSINESS IT 🌐")
     st.write("Our interactive web application project")
     
@@ -44,7 +44,7 @@ with st.container():
         st.subheader("")
 
 #import file excel(đang bị lỗi)+thanh filter
-dataset=pd.read_excel(r'vgsales.xlsx')
+dataset=pd.read_excel(r'E:\Python\vgsales.xlsx')
 st.sidebar.header("Please Filter Here:")
 Genre = st.sidebar.multiselect(
    "Select the Genre:",
