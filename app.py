@@ -43,7 +43,7 @@ with st.container():
         st.subheader("")
 
 #import file excel(đang bị lỗi)+thanh filter
-dataset=pd.read_excel(r'\vgsales.xlsx')
+dataset=pd.read_excel(r'vgsales.xlsx')
 st.header("Please Filter Here:")
 Genre = st.multiselect(
    "Select the Genre:",
