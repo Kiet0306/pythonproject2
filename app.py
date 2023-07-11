@@ -35,7 +35,6 @@ st.write("[Contact More >](https://www.facebook.com/profile.php?id=1000063193254
 
 with st.container():
     st.write("---")
-    st.header("My projects")
     st.write("##")
     image_column, text_column = st.columns((1,2))
     with image_column:
@@ -44,14 +43,16 @@ with st.container():
         st.subheader("")
 
 #import file excel(đang bị lỗi)+thanh filter
-dataset=pd.read_excel(r'vgsales.xlsx')
-st.sidebar.header("Please Filter Here:")
-Genre = st.sidebar.multiselect(
+dataset=pd.read_excel(r'E:\Python\vgsales.xlsx')
+st.header("Please Filter Here:")
+Genre = st.multiselect(
    "Select the Genre:",
    options=dataset["Genre"].unique(),
-   default=dataset["Genre"].unique())
+   default=dataset["Genre"].unique(),
+   disabled=False)
 
-Platform = st.sidebar.multiselect(
+
+Platform = st.multiselect(
    "Select the Platform:",
    options=dataset["Platform"].unique(),
    default=dataset["Platform"].unique())
@@ -168,7 +169,7 @@ def local_css(file_name):
    with open(file_name) as f:
       st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-local_css( "E:\style\style.css.txt")
+local_css("style.css")
 
 
 
