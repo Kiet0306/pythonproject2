@@ -30,6 +30,7 @@ st.write(
             - want to learn about Data Analysis & Data Science 
             
             If this sounds interesting to you, consider contact me via my email: 10622020@student.vgu.edu.vn
+           
             Here is the link for my code if needed : https://github.com/Kiet0306/pythonproject2 """
         )
 st.write("[Contact More >](https://www.facebook.com/profile.php?id=100006319325422)")
